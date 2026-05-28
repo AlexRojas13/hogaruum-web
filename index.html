@@ -15,8 +15,8 @@
     }
     .container { max-width: 720px; margin: 0 auto; }
     header { margin-bottom: 2.5rem; }
-    .logo { font-size: 1.8rem; font-weight: 800; color: #d97706; margin-bottom: 0.25rem; }
-    .subtitle { color: #78716c; font-size: 0.95rem; }
+    .lockup { height: 64px; width: auto; }
+    .subtitle { color: #78716c; font-size: 0.95rem; margin-top: 0.25rem; }
     h1 { font-size: 1.6rem; font-weight: 700; color: #1c1917; margin-bottom: 0.5rem; }
     .date { color: #a8a29e; font-size: 0.875rem; margin-bottom: 2rem; }
     h2 { font-size: 1.1rem; font-weight: 700; color: #92400e; margin: 2rem 0 0.75rem; }
@@ -38,7 +38,25 @@
 <body>
   <div class="container">
     <header>
-      <div class="logo">Hogaruum</div>
+      <svg class="lockup" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 440">
+        <defs>
+          <clipPath id="lk-r"><rect x="40" y="40" width="360" height="360" rx="80" ry="80"></rect></clipPath>
+          <clipPath id="lk-sky"><rect x="40" y="40" width="360" height="215"></rect></clipPath>
+        </defs>
+        <g clip-path="url(#lk-r)">
+          <rect x="40" y="40" width="360" height="360" fill="#FCE5C8"></rect>
+          <g clip-path="url(#lk-sky)">
+            <circle cx="220" cy="223" r="82" fill="#EE7A52"></circle>
+          </g>
+          <polygon points="40,255 128,255 174,201 220,255" fill="#B43A21"></polygon>
+          <polygon points="220,255 266,201 312,255 400,255" fill="#D85633"></polygon>
+          <rect x="40" y="255" width="360" height="145" fill="#6A2410"></rect>
+          <rect x="194" y="219" width="16" height="36" fill="#B43A21"></rect>
+        </g>
+        <text x="460" y="265" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="200" letter-spacing="-7">
+          <tspan fill="#D85633">Hogar</tspan><tspan fill="#3A1F12">uum</tspan>
+        </text>
+      </svg>
       <div class="subtitle">El sistema operativo del hogar</div>
     </header>
 
@@ -75,8 +93,8 @@
     <h2>5. Compartir datos</h2>
     <p>Los datos del hogar (tareas, listas, menús, etc.) son visibles para todos los miembros del mismo hogar dentro de la app. Tú controlas quién pertenece a tu hogar mediante el código de invitación.</p>
 
-    <h2>6. Conservación de datos</h2>
-    <p>Conservamos tus datos mientras tu cuenta esté activa. Si eliminas tu cuenta, borraremos todos tus datos personales en un plazo máximo de 30 días.</p>
+    <h2>6. Conservación y eliminación de datos</h2>
+    <p>Conservamos tus datos mientras tu cuenta esté activa. Puedes solicitar la eliminación completa de tu cuenta y todos tus datos enviando un email a <a href="mailto:alex.rojrod@gmail.com">alex.rojrod@gmail.com</a>. Procesaremos tu solicitud en un plazo máximo de 30 días.</p>
 
     <h2>7. Tus derechos (RGPD)</h2>
     <p>Si resides en el Espacio Económico Europeo tienes derecho a:</p>
