@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email confirmado — Hogaruum</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fffbeb;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 48px 36px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .icon { font-size: 56px; margin-bottom: 20px; }
+    h1 { color: #1c1917; font-size: 26px; font-weight: 800; margin-bottom: 12px; }
+    p { color: #78716c; font-size: 15px; line-height: 22px; margin-bottom: 32px; }
+    .btn {
+      display: inline-block;
+      background: #f59e0b;
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      padding: 16px 40px;
+      border-radius: 14px;
+      text-decoration: none;
+      margin-bottom: 16px;
+    }
+    .note { color: #a8a29e; font-size: 13px; line-height: 20px; }
+    .logo { color: #f59e0b; font-weight: 800; font-size: 18px; margin-bottom: 32px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🏠 Hogaruum</div>
+    <div class="icon">✅</div>
+    <h1>¡Email confirmado!</h1>
+    <p>Tu cuenta está lista. Abre la app para empezar a organizar tu hogar.</p>
+    <a href="hogaruum://" class="btn">Abrir Hogaruum →</a>
+    <br>
+    <p class="note">Si el botón no abre la app, vuelve a ella manualmente y ya puedes iniciar sesión.</p>
+  </div>
+
+  <script>
+    // Intenta abrir la app automáticamente en móvil
+    setTimeout(function() {
+      window.location.href = 'hogaruum://';
+    }, 800);
+  </script>
+</body>
+</html>
